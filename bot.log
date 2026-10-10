@@ -1,0 +1,459 @@
+nohup: ignoring input
+2026-10-10 23:19:46,772 - INFO - ANAS CYBER OS PRO v4.0
+2026-10-10 23:19:47,302 - INFO - 🚀 البوت يعمل...
+2026-10-10 23:19:48,540 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/getMe "HTTP/1.1 200 OK"
+2026-10-10 23:19:48,686 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/deleteWebhook "HTTP/1.1 200 OK"
+2026-10-10 23:19:48,696 - INFO - Application started
+2026-10-10 23:19:49,165 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/getUpdates "HTTP/1.1 200 OK"
+2026-10-10 23:19:49,518 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/answerCallbackQuery "HTTP/1.1 400 Bad Request"
+2026-10-10 23:19:49,523 - ERROR - Error: Query is too old and response timeout expired or query id is invalid
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_application.py", line 1315, in process_update
+    await coroutine
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_handlers/basehandler.py", line 159, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/anas-cyber-os/bot.py", line 59, in on_callback
+    data = q.data or ""; await q.answer()
+                         ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_callbackquery.py", line 190, in answer
+    return await self.get_bot().answer_callback_query(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 978, in answer_callback_query
+    return await super().answer_callback_query(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_bot.py", line 4362, in answer_callback_query
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.BadRequest: Query is too old and response timeout expired or query id is invalid
+2026-10-10 23:19:59,528 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/getUpdates "HTTP/1.1 200 OK"
+2026-10-10 23:20:09,702 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/getUpdates "HTTP/1.1 200 OK"
+2026-10-10 23:20:14,856 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/getUpdates "HTTP/1.1 200 OK"
+2026-10-10 23:20:15,710 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-10-10 23:20:15,951 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/editMessageText "HTTP/1.1 200 OK"
+2026-10-10 23:20:18,357 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/getUpdates "HTTP/1.1 200 OK"
+2026-10-10 23:20:18,867 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-10-10 23:20:19,384 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/editMessageText "HTTP/1.1 200 OK"
+2026-10-10 23:20:22,167 - ERROR - Error: httpx.ReadError: 
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/httpx/_transports/default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        pool_request.request
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/httpcore/_async/connection.py", line 103, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/httpcore/_async/http11.py", line 136, in handle_async_request
+    raise exc
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/httpcore/_async/http11.py", line 106, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/httpcore/_async/http11.py", line 177, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/httpcore/_async/http11.py", line 217, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.READ_NUM_BYTES, timeout=timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/httpcore/_backends/anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/request/_httpxrequest.py", line 279, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/httpx/_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/httpx/_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/httpx/_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/httpx/_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/httpx/_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/httpx/_transports/default.py", line 393, in handle_async_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 305, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/request/_httpxrequest.py", line 303, in do_request
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.ReadError: 
+2026-10-10 23:20:25,201 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/getUpdates "HTTP/1.1 200 OK"
+2026-10-10 23:20:26,018 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-10-10 23:20:26,239 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/editMessageText "HTTP/1.1 200 OK"
+2026-10-10 23:23:02,585 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/getUpdates "HTTP/1.1 200 OK"
+2026-10-10 23:23:03,075 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/answerCallbackQuery "HTTP/1.1 400 Bad Request"
+2026-10-10 23:23:03,077 - ERROR - Error: Query is too old and response timeout expired or query id is invalid
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_application.py", line 1315, in process_update
+    await coroutine
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_handlers/basehandler.py", line 159, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/anas-cyber-os/bot.py", line 59, in on_callback
+    data = q.data or ""; await q.answer()
+                         ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_callbackquery.py", line 190, in answer
+    return await self.get_bot().answer_callback_query(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 978, in answer_callback_query
+    return await super().answer_callback_query(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_bot.py", line 4362, in answer_callback_query
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.BadRequest: Query is too old and response timeout expired or query id is invalid
+2026-10-10 23:23:03,335 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/sendMessage "HTTP/1.1 200 OK"
+2026-10-10 23:23:12,844 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/getUpdates "HTTP/1.1 200 OK"
+2026-10-10 23:23:23,009 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/getUpdates "HTTP/1.1 200 OK"
+2026-10-10 23:23:28,077 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/getUpdates "HTTP/1.1 200 OK"
+2026-10-10 23:23:28,606 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-10-10 23:23:28,913 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/editMessageText "HTTP/1.1 200 OK"
+2026-10-10 23:23:35,439 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/getUpdates "HTTP/1.1 200 OK"
+2026-10-10 23:23:35,899 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-10-10 23:23:36,051 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/editMessageText "HTTP/1.1 200 OK"
+2026-10-10 23:23:45,613 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/getUpdates "HTTP/1.1 200 OK"
+2026-10-10 23:23:52,248 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/getUpdates "HTTP/1.1 200 OK"
+2026-10-10 23:23:52,707 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-10-10 23:23:52,924 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/editMessageText "HTTP/1.1 200 OK"
+2026-10-10 23:23:55,043 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/getUpdates "HTTP/1.1 200 OK"
+2026-10-10 23:23:55,200 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-10-10 23:23:55,374 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/editMessageText "HTTP/1.1 200 OK"
+2026-10-10 23:25:48,701 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/getUpdates "HTTP/1.1 200 OK"
+2026-10-10 23:25:49,160 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/answerCallbackQuery "HTTP/1.1 400 Bad Request"
+2026-10-10 23:25:49,166 - ERROR - Error: Query is too old and response timeout expired or query id is invalid
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_application.py", line 1315, in process_update
+    await coroutine
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_handlers/basehandler.py", line 159, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/anas-cyber-os/bot.py", line 59, in on_callback
+    data = q.data or ""; await q.answer()
+                         ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_callbackquery.py", line 190, in answer
+    return await self.get_bot().answer_callback_query(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 978, in answer_callback_query
+    return await super().answer_callback_query(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_bot.py", line 4362, in answer_callback_query
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.BadRequest: Query is too old and response timeout expired or query id is invalid
+2026-10-10 23:25:49,352 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/answerCallbackQuery "HTTP/1.1 400 Bad Request"
+2026-10-10 23:25:49,357 - ERROR - Error: Query is too old and response timeout expired or query id is invalid
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_application.py", line 1315, in process_update
+    await coroutine
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_handlers/basehandler.py", line 159, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/anas-cyber-os/bot.py", line 59, in on_callback
+    data = q.data or ""; await q.answer()
+                         ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_callbackquery.py", line 190, in answer
+    return await self.get_bot().answer_callback_query(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 978, in answer_callback_query
+    return await super().answer_callback_query(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_bot.py", line 4362, in answer_callback_query
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.BadRequest: Query is too old and response timeout expired or query id is invalid
+2026-10-10 23:25:49,523 - INFO - HTTP Request: POST https://api.telegram.org/bot8267295606:AAH2FipkJIIXW6m2hPbKIQn9Lr3zlCZE38Y/answerCallbackQuery "HTTP/1.1 400 Bad Request"
+2026-10-10 23:25:49,528 - ERROR - Error: Query is too old and response timeout expired or query id is invalid
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_application.py", line 1315, in process_update
+    await coroutine
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_handlers/basehandler.py", line 159, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/anas-cyber-os/bot.py", line 59, in on_callback
+    data = q.data or ""; await q.answer()
+                         ^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_callbackquery.py", line 190, in answer
+    return await self.get_bot().answer_callback_query(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 978, in answer_callback_query
+    return await super().answer_callback_query(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_bot.py", line 4362, in answer_callback_query
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.BadRequest: Query is too old and response timeout expired or query id is invalid

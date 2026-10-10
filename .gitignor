@@ -1,0 +1,12 @@
+bot.log
+*.log
+*.db
+*.db-journal
+reports/*.txt
+reports/*.json
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+*.tmp
+.env
